@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Measure</title>
+
+    <!-- daisy and tailwind -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--  -->
+
+</head>
+
+<body>
+
+    <main class="max-w-5xl mx-auto border-2 flex flex-col justify-center items-center gap-3 p-5 ">
+
+        <div>
+            <p>আপনার প্রেম ভালোবাসা সম্পর্কে জেনে নিন </p>
+        </div>    
+        <!-- display result of love by Name -->
+
+        <div id="display-board" class="artboard artboard-horizontal phone-1 border-2 rounded-lg p-10"></div>
+
+        <!-- User Input -->
+
+        <div class=" flex flex-col gap-4">
+
+            <input id="boy-name" type="text" placeholder="Boy Name" class=" input input-bordered w-full max-w-xs" />
+            <input id="girl-name" type="text" placeholder="Girl Name" class="input input-bordered w-full max-w-xs" />
+            <button onclick="btn()" class="btn btn-wide">See Now</button>
+
+        
+        </div>
+
+  
+
+    </main>
+
+    <script src="./scripts/love.js"></script>
+    <script src="./scripts/utility.js"></script>
+
+
+
+</body>
+
+</html>
