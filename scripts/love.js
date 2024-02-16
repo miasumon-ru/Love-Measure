@@ -2,9 +2,7 @@
 
 function btn(){
 
-    const boy = getInputElementById('boy-name');
-
-    console.log(typeof boy.length)
+    const boy = getInputElementById('boy-name')
  
     const girl = getInputElementById('girl-name');
    
