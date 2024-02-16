@@ -3,11 +3,11 @@
 function btn(){
 
     const boy = getInputElementById('boy-name');
-    console.log(boy);
 
+    console.log(typeof boy.length)
+ 
     const girl = getInputElementById('girl-name');
-    console.log(girl)
-
+   
     const displayElement = document.getElementById('display-board');
     
     const result = [
@@ -28,8 +28,19 @@ function btn(){
     const index = Math.round(randomNumber);
 
     const yourLuck = result[index];
+
+    if(boy.length === 0 || girl.length === 0){
+
+        alert('please provide boy and girl name ')
+      
+    }
+    else{      
+
+        displayElement.innerText = boy + ' এবং ' + girl + ' তোমাদের প্রেম : -------     '+ yourLuck ;
+
+    }
    
-    displayElement.innerText = boy + ' এবং ' + girl + ' তোমাদের প্রেম : -------     '+ yourLuck ;
+   
 
         
 }
